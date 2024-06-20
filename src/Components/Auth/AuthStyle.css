@@ -1,0 +1,80 @@
+/* Assuming you have a main CSS file where you include global styles */
+
+/* Container styling */
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Form element margins */
+  .mb-3 {
+    margin-bottom: 1rem;
+  }
+  
+  /* Form label styling */
+  .form-label {
+    font-weight: bold;
+  }
+  
+  /* Button styling */
+  .btn {
+    margin-top: 10px;
+  }
+  
+  /* Link button styling */
+  .btn-link {
+    font-size: 0.875rem; /* 14px */
+    color: #007bff; /* Bootstrap primary color */
+    text-decoration: none;
+  }
+  
+  .btn-link:hover {
+    text-decoration: underline;
+  }
+  
+
+
+  /* AuthStyle.css */
+
+/* Container styling */
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Form element margins */
+  .mb-3 {
+    margin-bottom: 1rem;
+  }
+  
+  /* Form label styling */
+  .form-label {
+    font-weight: bold;
+  }
+  
+  /* Button styling */
+  .btn {
+    margin-top: 10px;
+  }
+  
+  /* Link button styling */
+  .btn-link {
+    font-size: 0.875rem; /* 14px */
+    color: #007bff; /* Bootstrap primary color */
+    text-decoration: none;
+  }
+  
+  .btn-link:hover {
+    text-decoration: underline;
+  }
+  
