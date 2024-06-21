@@ -3,7 +3,9 @@ import { Outlet } from "react-router-dom";
 import { Offline } from "react-detect-offline";
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-import NavBar from "../Components/NavBar/Navbar";
+import Footer from "../Components/Footer/Footer";
+import CustomNavbar from "../Components/NavBar/Navbar";
+import Profile from "../Components/Profile/Profile";
 
 export default function AppLayout() {
   const notifyOffline = () => {
@@ -14,9 +16,10 @@ export default function AppLayout() {
 
   return (
     <>
-      <NavBar/>
+      <CustomNavbar/>
       <Offline>{notifyOffline()}</Offline>
-      <Outlet />
+      <Profile />
+      <Footer/>
     </>
   );
 }

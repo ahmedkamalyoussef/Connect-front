@@ -1,0 +1,112 @@
+.home-container {
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensure relative positioning for child elements */
+  }
+  
+  .home-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .home-input {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 35%; /* Adjust width as needed */
+    margin: 20px auto  10px auto;
+  }
+  
+  .home-button {
+    padding: 8px;
+    font-size: 14px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 10%; /* Adjust width as needed */
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .home-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .home-pagination-controls {
+    display: flex;
+    justify-content: center; /* Center pagination controls horizontally */
+    margin-bottom: 20px;
+  }
+  
+  .home-freelancer-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Display 6 cards per row */
+    gap: 20px;
+  }
+  
+  .home-freelancer-card {
+    padding: 10px; /* Adjust padding for smaller cards */
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .home-image{
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+  }
+  .home-freelancer-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .home-freelancer-card h3 {
+    margin: 0 0 5px 0; /* Adjust margin for smaller title */
+    font-size: 16px; /* Adjust font size for smaller title */
+  }
+  
+  .home-freelancer-card p {
+    margin: 0;
+    font-size: 14px; /* Adjust font size for smaller details */
+    color: #555;
+  }
+  
+  .home-pagination-arrows {
+    /* position: fixed; */
+    bottom: 20px; /* Adjust as needed */
+    left: 50%; /* Center horizontally */
+    /* transform: translateX(-50%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .home-pagination-button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 0 10px;
+  }
+  
+  .home-pagination-info {
+    font-size: 16px;
+  }
+  
+  .home-loading,
+  .home-error {
+    margin: 10px 0;
+    color: #ff0000;
+  }
+  
