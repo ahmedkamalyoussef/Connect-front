@@ -1,10 +1,10 @@
 import React from 'react';
-import { initMDB, Ripple } from 'mdb-ui-kit'; // Import MDB UI Kit components
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // If you are using Font Awesome icons
+import { initMDB, Ripple } from 'mdb-ui-kit';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
 import { faFacebookF, faTwitter, faGoogle, faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'; // Import specific icons
-import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome CSS for icons
-import { Container, Row, Col } from 'react-bootstrap'; // Import React Bootstrap components
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS for styling
+import '@fortawesome/fontawesome-free/css/all.min.css'; 
+import { Container, Row, Col } from 'react-bootstrap'; 
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 initMDB({ Ripple });
 

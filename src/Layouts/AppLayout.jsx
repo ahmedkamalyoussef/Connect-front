@@ -5,7 +5,8 @@ import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import Footer from "../Components/Footer/Footer";
 import CustomNavbar from "../Components/NavBar/Navbar";
-import Profile from "../Components/Profile/Profile";
+import CustomerSetting from "../Components/Settings/Customer/CustomerSetting";
+import FreelancerSettings from "../Components/Settings/Freelancer/FreelancerSettings";
 
 export default function AppLayout() {
   const notifyOffline = () => {
@@ -18,7 +19,7 @@ export default function AppLayout() {
     <>
       <CustomNavbar/>
       <Offline>{notifyOffline()}</Offline>
-      <Profile />
+      <FreelancerSettings />
       <Footer/>
     </>
   );

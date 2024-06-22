@@ -6,11 +6,11 @@ import ErrorPage from './Components/Error/ErrorPage';
 import ProtectedRouter from './Components/ProtectedRouts/ProtectedRouter';
 import Home from './Components/Home/Home';
 import { ForgetPassword, Otp, Register, ResetPassword } from './Components/Import/Index';
-import Settings from './Components/Settings/Settings';
-import Info from './Components/Settings/Info/Info';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import {AppLayout,Auth,JustFirst} from "./Layouts/Index";
 import Profile from './Components/Profile/Profile';
+import CustomerSetting from './Components/Settings/Customer/CustomerSetting';
+import FreelancerSettings from './Components/Settings/Freelancer/FreelancerSettings';
 
 const routers = createBrowserRouter([
   {
@@ -30,15 +30,14 @@ const routers = createBrowserRouter([
       </ProtectedRouter>
     ),
     children: [
-           {path: "home", element: <Home />, },
             { index: true, element: <Home /> },
+            { path: "home", element: <Home /> },
             { path: "profile", element: <Profile/>},
-            { path: "profileAccount/:id", element: <Profile /> },
-            { path: "setting", element: <Settings/>, children: [
-              { index: true, element: <Info/> },]},
+            { path: "customersettings", element: <CustomerSetting/>},
+            { path: "freelancersettings", element: <FreelancerSettings/>},
+            { path: "*", element: <ErrorPage /> },
           ],
-      },
-      { path: "*", element: <ErrorPage /> },
+  },
   {
     path: "/",
     element: <Auth />,
