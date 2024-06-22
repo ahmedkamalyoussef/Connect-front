@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+.profile-container {
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.profile-avatar {
+  width: 130px;
+  height: 130px;
+  border: 3px solid white;
+  margin-bottom: 10px;
+}
+
+.profile-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.profile-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.profile-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.profile-button {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.profile-button.message {
+  background-color: #007bff;
+  color: white;
+}
+
+.profile-button.message:hover {
+  background-color: #0056b3;
+}
+
+.profile-button.update {
+  background-color: #28a745;
+  color: white;
+}
+
+.profile-button.update:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 820px) {
+  .profile-container {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+}

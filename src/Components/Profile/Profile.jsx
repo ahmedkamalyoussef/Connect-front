@@ -1,29 +1,33 @@
 import React from 'react';
-import './Profile.css'
+import './Profile.css';
+
 function Profile() {
   const profileData = {
     id: "1d71bc9a-faab-400a-98c1-9eccb683d491",
-    name: "hdhd",
-    description: "string",
-    location: null,
-    skills: ["string"],
-    availability: false,
+    name: "Hamza",
+    Profession: "Developer",
+    description: "jfgfjkkfjklgjlkflgl;f",
   };
 
   return (
-    <div className="container-fluid bg-dark text-white min-vh-100 d-flex flex-column align-items-center justify-content-center" style={{ backgroundImage: 'url(https://picsum.photos/200)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <div className="card bg-transparent border-0 text-center">
-        <img src="https://picsum.photos/200/300" className="card-img-top rounded-circle mx-auto" alt="Profile Avatar" style={{ width: '150px', height: '150px' }} />
+    <div
+      className="profile-container"
+      style={{ backgroundImage: 'url(https://picsum.photos/820/312)' }}
+    >
+      <div>
+        <img
+          src="https://picsum.photos/200/300"
+          className="profile-avatar rounded-circle mx-auto"
+          alt="Profile Avatar"
+        />
         <div className="card-body">
-          <h1 className="card-title">{profileData.name}</h1>
-          <p className="card-text">{profileData.description}</p>
-          {profileData.location && <p>Location: {profileData.location}</p>}
-          <div className="my-3">
-            {profileData.skills.map((skill, index) => (
-              <span key={index} className="badge bg-secondary mx-1">{skill}</span>
-            ))}
+          <h1 className="card-title profile-title">{profileData.name}</h1>
+          <p className="card-text profile-text">{profileData.Profession}</p>
+          <p className="card-text profile-text">{profileData.description}</p>
+          <div className="profile-buttons">
+            <button className="profile-button message">Send Message</button>
+            <button className="profile-button update">Update Info</button>
           </div>
-          <p>Availability: {profileData.availability ? 'Available' : 'Not Available'}</p>
         </div>
       </div>
     </div>
@@ -31,3 +35,4 @@ function Profile() {
 }
 
 export default Profile;
+ 
